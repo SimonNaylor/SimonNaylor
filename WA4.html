@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="WA4" content="">
+  <title>
+  Change_me lol
+  </title>
+
+   </head><body>
+
+<script>
+function getVote(int) {
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("poll").innerHTML=this.responseText;
+    }
+  }
+  xmlhttp.open("GET","poll_vote.php?vote="+int,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+<div id="poll">
+<h3>Who do you think fights more?</h3>
+<form>
+Stark: <input type="radio" name="vote" value="0" onclick="getVote(this.value)"><br>
+Lannister: <input type="radio" name="vote" value="1" onclick="getVote(this.value)">
+</form>
+</div>
+
+<center> 
+<h1>
+  
+  In the Game of Thrones, the Starks fight more than any other family.
+</h1>
+
+
+</center> 
+
+<p1>  
+Game of Thrones is known for its dramatic fighting and battles on a massive scale. While the Lannisters are known for being combative, it is actually the Stark family that has been involved in most battles. Over eight seasons, the Starks have fought a total of 16 times. This is twice a season on average, meaning that war with the Starks is inevitable.
+</p1>
+<br>
+<center>
+<img style="border:0px solid Violet;" src="1ATTACK.png" alt="gamestop-logo" width="auto" height="auto" class="center">
+</center>
+<center>
+
+<br>
+
+</center>
+<br>
+<p2><a href="https://www.kaggle.com/mylesoneill/game-of-thrones"> The dataset</a> that I used is a Game of Thrones dataset from Kaggle as well as some extra research from <a href="https://gameofthrones.fandom.com/wiki/Game_of_Thrones_Wiki"> The Game of Thrones Wiki</a> and 
+<a href="https://time.com/5558803/game-of-thrones-battles-ranked"> Time's Battle Ranking </a> to complete my analysis. The picture above is a graph that I created in Excel to show the total of number of battles that a family has participated in. Suprisingly the Starks have the top spot, beating out the angry Lannisters by 1. This ranking includes attackers and defenders to sum up the total number.
+</p2>
+<script>
+var counter = 0
+function incrementCounter() {
+    counter += 1
+    document.getElementById("counter").innerHTML = counter;
+    console.log(counter)
+}
+   </script>
+   <p style="color:SlateBlue;">Stark Battles <span id="counter">0</span></p>
+
+   <button style="color:SlateBlue;" type="button" onclick="incrementCounter()">Click the button the number of times you thought the Starks fought.</button> 
+
+<br><br>
+<img style="border:0px solid Violet;" src="TotalBattles.png" alt="gamestop-logo" width="auto" height="auto" class="center">
+<p3>For the first part, I talked about how the data included both attackers and defenders. This seemed too generalized and I expected the Lannisters to be the most aggressive family. This turns out to not be the case. The Lannisters do fight a lot, yes, but the Starks attack 25% more than the Lannisters do. Below, a graph shows how the Starks do indeed attack more than they defend while also seemingly being the main aggressor. 
+</p3>
+<br><br>
+<img style="border:0px solid Violet;" src="AvgFights.png" alt="gamestop-logo" width="auto" height="auto" class="center">
+<p4>For a statistic, as mentioned above, I chose the rate at which a family will fight per season on average. Game of Thrones is an action-packed show and they put action into nearly every episode. The show is eight seasons long so I divided the total number of attacks and defends by the 8 seasons that exist. The picture of that graph is below. 
+</p4>
+<br><br>
+<p5>The Lannisters, no matter how aggressive they are, do not fight as much as the mighty-ish Stark family. This is not indicative of how much they win or lose, but how many fights and battles they get into. The Starks start more battles than they don’t and this data has made it abundantly clear.
+</p5>
+</body>
+
+</body></html>
