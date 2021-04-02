@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>WA10</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reset.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/black.min.css" id="theme">
+
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/monokai.min.css" id="highlight-theme">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <h1> WA #10</h1>
+                    <p >Simon</p>
+                    <p style="font-weight: :;">I am burnt out</p>
+                    <img src="https://media.giphy.com/media/xTiTnf9SCIVk8HIvE4/giphy.gif">
+
+                </section>
+                <section>
+                    <p>Adding Numbers to Slides</p>
+                    <br>
+                    <pre><code data-trim data noescape>
+
+                    script
+                        Reveal.initialize({
+                        hash: true,
+                        slideNumber: 'h.v' 
+                    });
+                    script
+
+                </code></pre>
+
+                </section>
+
+
+
+
+                <section>
+                    <p>Transitions</p>
+
+                
+                    <pre><code data-trim data noescape>
+                    <section> data-transition="slide"
+                        PLS DO NOT HIT THE DOWN ARROW
+                    </section>
+                    <section> data-transition="slide"
+                        Why
+                    </section>
+                    section data-transition="slide-in fade-out"
+                        Did you do that?
+                </code></pre>
+                </section>
+                <section>
+                        <section data-transition="slide">
+                            PLS DO NOT HIT THE DOWN ARROW
+                        </section>
+                        <section data-transition="slide">
+                            Why
+                        </section>
+                        <section data-transition="slide-in fade-out">
+                            Did you do that?
+                        </section>
+                    </section>
+
+                <section>
+                    
+                    <h1>I am about to take a nap</h1>
+
+                </section>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/notes/notes.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/highlight.min.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                slideNumber: 'h.v',
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+            });
+        </script>
+    </body>
+</html>
